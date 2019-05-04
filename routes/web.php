@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'about';
 });
+Route::get('/index', function () {
+    return 'index';
+});
