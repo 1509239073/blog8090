@@ -45,3 +45,4 @@ Route::post('hello_from_form', function (){
 Route::post('home/user', 'Home\UserController@show');
 Route::get('home/profile', 'Home\UserController@profile');
 Route::resource('home/posts', 'Home\PostController');
+Route::get('home/index', 'Home\UserController@index');
