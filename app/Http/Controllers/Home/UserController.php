@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Pagination\LengthAwarePaginator;
 use App\Tools\SetPageAuto;
+use App\LogOfInfo;
+
 
 
 class UserController extends Controller
@@ -43,6 +45,16 @@ class UserController extends Controller
 
             $bool= Storage::disk('upload')->put($filename,file_get_contents($path));
             dd($bool);
+        }
+
+    }
+    public function testModel(){
+        $LogOfInfo  = new LogOfInfo();
+        $log_of_info = $LogOfInfo::find([1,2,3]);
+
+        foreach ($log_of_info as $value) {
+            echo $value->name;
+            echo '<br/>';
         }
 
     }
