@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Pagination\LengthAwarePaginator;
 use App\Tools\SetPageAuto;
-use App\LogOfInfo;
+use App\LogOfInfo as LogOfInfo;
 
 
 
@@ -49,8 +49,8 @@ class UserController extends Controller
 
     }
     public function testModel(){
-        $LogOfInfo  = new LogOfInfo();
-        $log_of_info = $LogOfInfo::find([1,2,3]);
+
+        $log_of_info = LogOfInfo::find([1,2,3]);
 
         foreach ($log_of_info as $value) {
             echo $value->name;
