@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Pagination\LengthAwarePaginator;
 use App\Tools\SetPageAuto;
 use App\LogOfInfo as LogOfInfo;
+use App\Users as Users;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 
 
@@ -50,12 +52,30 @@ class UserController extends Controller
     }
     public function testModel(){
 
-        $log_of_info = LogOfInfo::find([1,2,3]);
+        //$log_of_info = LogOfInfo::find([1,2,3]);
+        //
+        //foreach ($log_of_info as $value) {
+        //    echo $value->name;
+        //    echo '<br/>';
+        //}
+        //dump(bcrypt(123456));
+        //$newUser = [
+        //    'email' => 'aeweekk@qq.com',
+        //    'name' => 'allen.tai22',
+        //    'password' => bcrypt(1234567),
+        //
+        //];
+        //
+        //$user = Users::find(17);
+        //$token = JWTAuth::fromUser($user);
 
-        foreach ($log_of_info as $value) {
-            echo $value->name;
-            echo '<br/>';
-        }
+        //dump($token);
+        //$user = Users::find(21);
+        //$token = JWTAuth::tokenById(21);
+        //dump($token);
+
+
+
 
     }
     public function profile()
