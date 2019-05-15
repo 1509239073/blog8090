@@ -389,6 +389,7 @@ class ComposerStaticInite8ee73119fb3ffcc31953671786d43f8
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -405,6 +406,7 @@ class ComposerStaticInite8ee73119fb3ffcc31953671786d43f8
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Issues' => __DIR__ . '/../..' . '/app/Issues.php',
         'App\\LogOfInfo' => __DIR__ . '/../..' . '/app/LogOfInfo.php',
+        'App\\Phone' => __DIR__ . '/../..' . '/app/Phone.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -412,6 +414,7 @@ class ComposerStaticInite8ee73119fb3ffcc31953671786d43f8
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Tools\\CustomPage' => __DIR__ . '/../..' . '/app/Tools/CustomPage.php',
         'App\\Tools\\SetPageAuto' => __DIR__ . '/../..' . '/app/Tools/SetPageAuto.php',
+        'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\Users' => __DIR__ . '/../..' . '/app/Users.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
