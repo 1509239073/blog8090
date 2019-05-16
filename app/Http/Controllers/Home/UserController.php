@@ -54,12 +54,12 @@ class UserController extends Controller
     }
     public function testModel(){
 
-        $log_of_info = LogOfInfo::find([1,2,3]);
-
-        foreach ($log_of_info as $value) {
-            echo $value->name;
-            echo '<br/>';
-        }
+        //$log_of_info = LogOfInfo::find([1,2,3]);
+        //
+        //foreach ($log_of_info as $value) {
+        //    echo $value->name;
+        //    echo '<br/>';
+        //}
         //dump(bcrypt(123456));
         //$newUser = [
         //    'email' => 'aeweekk@qq.com',
@@ -79,9 +79,14 @@ class UserController extends Controller
         //foreach ($phone as $index => $item) {
         //    dump($item->created_at);
         //}
-        $phone = Phone::find(1);
-        $phone->name = 'abby';
+        $phone = User::find(1);
+        dump($phone->name);
+        dump($phone->name_all_diff);
+        $phone->name = 'XXX.tai';
+        dump($phone->name);
         $phone->save();
+        //$phone->name = 'abby';
+        //$phone->save();
 
 
 
