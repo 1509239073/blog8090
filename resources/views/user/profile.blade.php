@@ -11,11 +11,22 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery.js"></script>
 
+{{--@extends('layouts.app')--}}
 
-<div class="container">
-    @foreach ($users as $user)
-        {{ $user->name }} <br/>
-    @endforeach
+{{--@section('content')--}}
+<div id="app">
+
+    <!-- 加入vue组件 -->
+    <example-component></example-component>
 </div>
 
-{!! $pages !!}
+<script src="{{ asset('js/app.js') }}"></script>
+
+{{--@endsection--}}
+{{--<div class="container">--}}
+    {{--@foreach ($users as $user)--}}
+        {{--{{ $user->name }} <br/>--}}
+    {{--@endforeach--}}
+{{--</div>--}}
+
+{{--{!! $pages !!}--}}
